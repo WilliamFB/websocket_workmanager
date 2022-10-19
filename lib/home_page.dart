@@ -52,8 +52,8 @@ class _HomePageState extends State<HomePage> {
               child: const Text('Start Background service'),
             ),
             ElevatedButton(
-              onPressed: () {},
-              child: const Text('Stop Background service'),
+              onPressed: () => _backgroundTaskService.cancelAll(),
+              child: const Text('Stop tasks'),
             ),
             ElevatedButton(
               onPressed: () => _backgroundTaskService.registerTask('abc'),
